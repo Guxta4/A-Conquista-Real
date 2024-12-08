@@ -4,41 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Conquista Real</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="animation-container">
-        <h1 class="title">A Conquista Real</h1>
-    </div>
-
+    <header>
+        <h1>A Conquista Real</h1>
+        <p>Um jogo interativo e dinâmico para jogar com os amigos,parentes e etc</p>
+    </header>
     <main>
-        <section class="rules">
-            <h2>Regras para Classes de Cartas</h2>
-            
-            <div class="class">
-                <h3>Guerreiro</h3>
-                <p><strong>Tipo de Carta:</strong> Ataque/Defesa</p>
-                <p><strong>Efeito:</strong> Aumenta o dano físico e pode bloquear ataques.</p>
-                <ul>
-                    <li>Ao jogar, o Guerreiro causa 4 pontos de dano ao oponente.</li>
-                    <li>Pode usar uma habilidade de defesa que absorve até 3 pontos de dano em um turno.</li>
-                    <li>Se o Guerreiro atacar e não for bloqueado, ele ganha +1 de ataque no próximo turno.</li>
-                </ul>
-            </div>
+        <section id="sobre">
+            <h2>Sobre o Jogo</h2>
+            <p>
+                A Conquista Real é um jogo de estratégia e cartas onde os jogadores assumem o papel de diferentes classes, cada uma com habilidades únicas. O objetivo é superar seus oponentes usando estratégias inteligentes, combinando ataques poderosos, defesas sólidas, cura e controle do campo de batalha.
+Os jogadores escolhem entre as classes Guerreiro, Mago, Arqueiro, Curandeiro, Assassino, Guardião e Elemental, cada uma com regras específicas e habilidades que se complementam no campo de batalha.
+            </p>
+        </section>
+        <section id="regras">
+            <h2>Regras do Jogo</h2>
+            <h3>Objetivo</h3>
+            <p>Destruir o castelo do adversário antes que ele destrua o seu.</p>
+            <h3>Campo de Batalha</h3>
+            <ul>
+                <li>Dividido em duas partes: o lado do jogador e o lado do oponente.</li>
+                <li>Cada jogador tem um castelo com 100 pontos de vida (HP).</li>
+            </ul>
+            <h3>Rodadas</h3>
+            <ul>
+                <li>O jogo é por turnos.</li>
+                <li>Em cada turno, o jogador pode jogar uma carta de ataque ou defesa ou usar uma carta de poder especial.</li>
+            </ul>
+            <h3>Sistema de Vida das cartas</h3>
+            <p>Cada Carta tem 100corações de vida ou seja ele tem 10 chances de atacar o adversario.</p>
+            <h3>Regras das classes das cartas</h3>
+            <ul>
+                <li><strong>Guerreiro Efeito: Aumenta dano físico e bloqueia ataques. Regras:Causa 4 de dano e pode bloquear 3 de dano por turno. </li>
+                <li><strong>Mago Efeito: Dano em área e controle do campo. Regras:Causa 5 de dano em até 3 inimigos. Controla um inimigo por 1 turno.</li>
+                <li><strong>Arqueiro Efeito: Ataques rápidos e evasão. Regras: Causa 3 de dano e pode atacar 2 vezes (-1 no segundo ataque). </li>
+                <li><strong>Curandeiro Efeito: Cura e escudos. Regras:Cura 6 de vida para si ou aliados. Cria escudo que absorve 4 de dano.2vezes em cada turno</li>
+                <li><strong>Assassino Efeito: Danos críticos furtivos. Regras:Causa 7 de dano se não for detectado. Elimina inimigos com menos de 5 de vida.1vez em cada turno </li>
+                <li><strong>Guardião Efeito: Protege aliados. Regras:Absorve 5 de dano destinado a aliados.2vezes em cada turno </li>
+                <li><strong>Elemental Efeito: Invoca criaturas elementais. Regras:Invoca criatura que causa 4 de dano.Efeitos: Fogo (dano contínuo), Água (cura), etc.1vez em cada turno </li>
+                <li><strong>Mago Efeito: Dano em área e controle do campo. Regras:Causa 5 de dano em até 3 inimigos. Controla um inimigo por 1 turno. 
 
-            <div class="class">
-                <h3>Mago</h3>
-                <p><strong>Tipo de Carta:</strong> Mágica</p>
-                <p><strong>Efeito:</strong> Causa dano em área ou controla o campo.</p>
-                <ul>
-                    <li>Ao usar um feitiço, o Mago pode causar 5 pontos de dano em uma área (até 3 inimigos).</li>
-                    <li>Pode escolher controlar um inimigo por um turno, impedindo-o de atacar.</li>
-                    <li>Habilidades mágicas podem ser usadas uma vez por turno.</li>
-                </ul>
-            </div>
-            
-            <!-- Adicione outras classes seguindo o mesmo padrão -->
+            </ul>
+            <h3>Condições de Vitória</h3>
+            <p>Ganhe ao reduzir o HP do castelo inimigo a 0.</p>
         </section>
     </main>
+    <footer>
+        <p>© 2024 - A Conquista Real. Todos os direitos estão guardados.</p>
+    </footer>
 </body>
 </html>
