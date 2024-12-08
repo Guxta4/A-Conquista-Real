@@ -4,49 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Conquista Real</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>A Conquista Real</h1>
-        <p>Um jogo interativo e dinâmico criado por um jovem de 11 anos!</p>
-    </header>
+    <div class="animation-container">
+        <h1 class="title">A Conquista Real</h1>
+    </div>
+
     <main>
-        <section id="sobre">
-            <h2>Sobre o Jogo</h2>
-            <p>
-                "A Conquista Real" foi criado por um jovem que queria um jogo divertido para jogar com amigos e familiares durante as férias. 
-                Este jogo combina estratégia, interação e diversão para todas as idades.
-            </p>
-        </section>
-        <section id="regras">
-            <h2>Regras do Jogo</h2>
-            <h3>Objetivo</h3>
-            <p>Destruir o castelo do adversário antes que ele destrua o seu.</p>
-            <h3>Campo de Batalha</h3>
-            <ul>
-                <li>Dividido em duas partes: o lado do jogador e o lado do oponente.</li>
-                <li>Cada jogador tem um castelo com 100 pontos de vida (HP).</li>
-            </ul>
-            <h3>Rodadas</h3>
-            <ul>
-                <li>O jogo é por turnos.</li>
-                <li>Em cada turno, o jogador pode jogar uma carta de ataque ou defesa ou usar uma carta de poder especial.</li>
-            </ul>
-            <h3>Sistema de Energia</h3>
-            <p>Cada jogador começa com 3 pontos de energia e ganha +1 por turno (máximo de 10).</p>
-            <h3>Cartas</h3>
-            <ul>
-                <li><strong>Cartas de Ataque:</strong> Exemplo: Arqueiro (dano 10), Espadachim (dano 20).</li>
-                <li><strong>Cartas de Defesa:</strong> Exemplo: Escudo (absorve 15 de dano), Muralha (reduz 50% do dano por 1 turno).</li>
-                <li><strong>Cartas de Poder:</strong> Exemplo: Fúria do Dragão (dano 40 em área), Cura do Castelo (+20 HP).</li>
-            </ul>
-            <h3>Condições de Vitória</h3>
-            <p>Ganhe ao reduzir o HP do castelo inimigo a 0.</p>
+        <section class="rules">
+            <h2>Regras para Classes de Cartas</h2>
+            <div class="class">
+                <h3>Guerreiro</h3>
+                <p><strong>Tipo de Carta:</strong> Ataque/Defesa</p>
+                <p><strong>Efeito:</strong> Aumenta o dano físico e pode bloquear ataques.</p>
+                <ul>
+                    <li>Ao jogar, o Guerreiro causa 4 pontos de dano ao oponente.</li>
+                    <li>Pode usar uma habilidade de defesa que absorve até 3 pontos de dano em um turno.</li>
+                    <li>Se o Guerreiro atacar e não for bloqueado, ele ganha +1 de ataque no próximo turno.</li>
+                </ul>
+            </div>
+            <!-- Outras classes seguem o mesmo formato -->
         </section>
     </main>
-    <footer>
-        <p>© 2024 - A Conquista Real. Todos os direitos reservados.</p>
-    </footer>
 </body>
 </html>
