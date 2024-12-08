@@ -1,54 +1,72 @@
+/* Configuração geral */
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    background: url('background.png') no-repeat center center fixed;
-    background-size: cover;
-    color: #fff;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-}
-
-header {
-    text-align: center;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
-}
-
-header h1 {
+    background: linear-gradient(to bottom, #1f4037, #99f2c8);
+    color: white;
     margin: 0;
-    font-size: 2.5em;
-    color: #ffd700;
-}
-
-header p {
-    font-size: 1.2em;
-}
-
-main {
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.6);
-}
-
-section {
-    margin-bottom: 20px;
-}
-
-h2 {
-    border-bottom: 2px solid #ffd700;
-    display: inline-block;
-    padding-bottom: 5px;
-}
-
-ul {
-    list-style-type: none;
     padding: 0;
 }
 
-ul li {
-    margin: 10px 0;
+/* Animação ao entrar */
+.animation-container {
+    text-align: center;
+    margin-top: 50px;
 }
 
-footer {
+.title {
+    font-size: 3rem;
+    animation: fadeIn 3s ease-in-out, colorChange 5s infinite;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color: #ffaf40;
+    }
+    50% {
+        color: #ff6f61;
+    }
+    100% {
+        color: #ffd700;
+    }
+}
+
+/* Seções do site */
+.rules {
+    padding: 20px;
+}
+
+.rules h2 {
     text-align: center;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.8);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.class {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 15px auto;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.class h3 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.class p,
+.class ul {
+    margin: 10px 0;
+    line-height: 1.5;
 }
